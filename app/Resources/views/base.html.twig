@@ -11,3 +11,27 @@
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+{% if app.user == null %}
+   <li>
+       <a href="{{ path('fos_user_security_login') }}">
+           <button type="button" class="btn btn-primary">Login</button>
+       </a>
+   </li>
+   <li>
+       <a href="{{ path('fos_user_registration_register') }}">
+           <button type="button" class="btn btn-default">Registro</button>
+       </a>
+   </li>                               
+{% else %}
+   <li>
+       <a href="#">
+           <button type="button" class="btn btn-primary">Publica un trayecto</button>
+       </a>
+   </li>
+   <li>
+       <a href="{{ path('fos_user_security_logout') }}">
+           <button type="button" class="btn btn-default">{{ app.user.username }}, Desconectar</button>
+       </a>
+   </li>
+{% endif %}
+

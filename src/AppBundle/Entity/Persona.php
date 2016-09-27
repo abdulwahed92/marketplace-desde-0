@@ -21,11 +21,6 @@ class Persona extends BaseUser
      * @ORM\Column(type="string", nullable=true)
      */
     protected $avatar;    
-    
-    /**
-     * @ORM\OneToMany(targetEntity="Trayecto", mappedBy="conductor")
-     */
-    protected $trayectos;    
 
     public function __construct()
     {
@@ -55,39 +50,5 @@ class Persona extends BaseUser
     public function getAvatar()
     {
         return $this->avatar;
-    }
-
-    /**
-     * Add trayecto
-     *
-     * @param \AppBundle\Entity\Trayecto $trayecto
-     *
-     * @return Persona
-     */
-    public function addTrayecto(\AppBundle\Entity\Trayecto $trayecto)
-    {
-        $this->trayectos[] = $trayecto;
-
-        return $this;
-    }
-
-    /**
-     * Remove trayecto
-     *
-     * @param \AppBundle\Entity\Trayecto $trayecto
-     */
-    public function removeTrayecto(\AppBundle\Entity\Trayecto $trayecto)
-    {
-        $this->trayectos->removeElement($trayecto);
-    }
-
-    /**
-     * Get trayectos
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getTrayectos()
-    {
-        return $this->trayectos;
     }
 }

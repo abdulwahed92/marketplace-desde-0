@@ -2,3 +2,10 @@
 [20-Aug-2016 20:38:25 UTC] PHP Parse error:  syntax error, unexpected '||' (T_BOOLEAN_OR) in /home/ubuntu/workspace/dev/web/app_dev.php on line 14
 [20-Aug-2016 20:38:46 UTC] PHP Parse error:  syntax error, unexpected '||' (T_BOOLEAN_OR) in /home/ubuntu/workspace/dev/web/app_dev.php on line 14
 [20-Aug-2016 20:39:23 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/dev/web/app_dev.php on line 33
+[21-Sep-2016 07:34:42 UTC] PHP Fatal error:  Class 'JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle' not found in /home/ubuntu/workspace/dev/app/AppKernel.php on line 19
+[21-Sep-2016 07:34:42 UTC] PHP Stack trace:
+[21-Sep-2016 07:34:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/dev/web/app_dev.php:0
+[21-Sep-2016 07:34:42 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/dev/web/app_dev.php:32
+[21-Sep-2016 07:34:42 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/dev/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:182
+[21-Sep-2016 07:34:42 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/dev/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:130
+[21-Sep-2016 07:34:42 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/dev/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:430
